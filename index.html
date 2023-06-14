@@ -1,22 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Best Website in the World</title>
+  <title>My E-commerce Website</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Responsive design for small screens */
+      nav ul {
+        display: none;
+      }
+
+      nav ul li {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Best Website in the World!</h1>
+  <header>
+    <h1>Welcome to My E-commerce Website</h1>
+  </header>
 
-  <form action="mailto:faseehwazir@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Cart</a></li>
+      <li style="float: right;"><a href="#">Sign In</a></li>
+      <li style="float: right;"><a href="#">Sign Up</a></li>
+    </ul>
+  </nav>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <main>
+    <h2>Featured Products</h2>
+    <!-- Add your product listings here -->
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <h2>Categories</h2>
+    <!-- Add your categories and their links here -->
 
-    <input type="submit" value="Submit">
-  </form>
+    <h2>Shopping Cart</h2>
+    <!-- Add your cart functionality and display the items here -->
+
+    <!-- Login Form -->
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <label for="loginEmail">Email:</label><br>
+      <input type="email" id="loginEmail" name="loginEmail" required><br><br>
+
+      <label for="loginPassword">Password:</label><br>
+      <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+
+      <input type="submit" value="Login">
+    </form>
+
+    <!-- Sign Up Form -->
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="post">
+      <label for="signupName">Name:</label><br>
+      <input type="text" id="signupName" name="signupName" required><br><br>
+
+      <label for="signupEmail">Email:</label><br>
+      <input type="email" id="signupEmail" name="signupEmail" required><br><br>
+
+      <label for="signupPassword">Password:</label><br>
+      <input type="password" id="signupPassword" name="signupPassword" required><br><br>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2023 My E-commerce Website. All rights reserved.
+  </footer>
 </body>
 </html>
